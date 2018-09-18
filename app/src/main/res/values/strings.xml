@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeatherTestTask</string>
+    <string name="tab1">Weather</string>
+    <string name="tab2">History</string>
+</resources>
