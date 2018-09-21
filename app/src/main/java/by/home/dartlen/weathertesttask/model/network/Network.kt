@@ -8,7 +8,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-class Network{
+class Network {
     fun initOkHttp(): OkHttpClient {
         return OkHttpClient.Builder()
                 .connectTimeout(30, TimeUnit.SECONDS)
@@ -16,6 +16,7 @@ class Network{
                 .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
                 .build()
     }
+
     fun initRetrofit(): Retrofit {
         return Retrofit.Builder().baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())

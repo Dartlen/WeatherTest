@@ -6,6 +6,6 @@ interface BasePresenter<V> {
 
     fun unSubscribe()
 
-    var view : V?
+    var view: V?
 
 }
